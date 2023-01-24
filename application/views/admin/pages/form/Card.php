@@ -1,0 +1,1 @@
+<?php $this->load->view(component('base','cardBody'),['content'=>content($contantFile,$contant),'data'=>[]])?>

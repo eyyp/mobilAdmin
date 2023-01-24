@@ -1,0 +1,1 @@
+dosya yolları define olarak stacklenecek

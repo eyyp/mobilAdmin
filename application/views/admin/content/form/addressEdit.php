@@ -1,0 +1,51 @@
+<form action = "<?php echo base_url('index.php/AdminPanel/addressEditdb/'.$veri->id)?>" method ="POST" >
+        <?php
+        $this->load->view(component('form','input'),[
+            'name'=>'il',
+            'id'=>'',
+            'type'=>'text',
+            'placeholder'=>$veri->il,
+            'required'=>'required'
+        ]);
+        $this->load->view(component('form','input'),[
+            'name'=>'ilce',
+            'placholder'=>$veri->ilçe,
+            'id'=>'',
+            'required'=>'required'
+        ]);
+        $this->load->view(component('form','input'),[
+            'name'=>'mahalle',
+            'placholder'=>$veri->mahalle,
+            'id'=>'',
+            'required'=>'required'
+        ]);
+        $this->load->view(component('form','input'),[
+            'name'=>'cadde',
+            'placholder'=>$veri->cadde,
+            'id'=>'',
+            'required'=>'required'
+        ]);
+        $this->load->view(component('form','input'),[
+            'name'=>'sokak',
+            'placholder'=>$veri->sokak,
+            'id'=>'',
+            'required'=>'required'
+        ]);
+        $this->load->view(component('form','input'),[
+            'name'=>'no',
+            'placholder'=>$veri->no,
+            'id'=>'',
+            'required'=>'required'
+        ]);
+        ?>            
+    <div class="form-group mb-10">
+        <div>
+            <button type="submit" class="btn btn-primary waves-effect waves-light">
+                Submit
+            </button>
+            <button type="reset" class="btn btn-secondary waves-effect m-l-5">
+                Cancel
+            </button>
+        </div>
+    </div>
+</form>
